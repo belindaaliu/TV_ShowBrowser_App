@@ -1,3 +1,9 @@
+.container {
+  max-width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 #showSummary {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -75,6 +81,13 @@
   .col-lg-custom {
     flex: 0 0 20%;
     max-width: 20%;
+  }
+}
+
+@media (max-width: 290px) {
+  .col-custom {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
