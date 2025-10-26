@@ -14,6 +14,8 @@
   height: 300px;
   object-fit: cover;
   width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .card-body {
@@ -28,8 +30,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-bottom: 0.5rem;
-  line-height: 1.2;
 }
 
 .card-body .d-flex {
@@ -43,18 +46,29 @@
   text-align: right;
 }
 
-.card-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-
 #scheduleTable th,
 #scheduleTable td {
   min-width: 120px;
   white-space: nowrap;
   font-size: 14px;
+}
+
+#showsGallery .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#showsGallery .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 @media (min-width: 992px) {
