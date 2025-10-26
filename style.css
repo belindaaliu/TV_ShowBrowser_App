@@ -1,0 +1,25 @@
+.gallery-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#showSummary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#scheduleTable th,
+#scheduleTable td {
+  min-width: 120px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .col-lg-custom {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
